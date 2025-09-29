@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background: #000; color: #fff;">
+
+    <h1 style="text-align: center; color: #fff;">The Binding of Isaac</h1>
+
+    <section id="¿Qué es?" style="max-width: 600px; margin: auto; background: #c00; padding: 20px; border-radius: 12px; color: #fff;">
+        <p>
+            The Binding of Isaac no es solo un videojuego roguelike de acción y aventura desarrollado por Edmund McMillen y Florian Himsl, es una experiencia que redefine el género gracias a su infinita rejugabilidad y a la profunda sinergia de sus objetos.
+        </p>
+        <br>
+        <img src="tboi.1.jpg" title="The Binding of Isaac" width="300" height="200" style="display: block; margin: auto;">
+    </section>
+
+    <br>
+
+    <h1 style="text-align: center; color: #fff;">Personajes</h1>
+
+    <section id="Personajes" style="max-width: 600px; margin: auto; background: #c00; padding: 20px; border-radius: 12px; color: #fff;">
+        <p>
+            Cada personaje en el juego no solo se limita a tener estadisticas iniciales diferentes, sino que cada uno tiene su mecánica única que hara que jugar con cada uno sea una experiencia diferente, teniendo 17 personajes en total a elegir, pero no conformes con eso, cada personaje cuanta con una version llamada Tainted, la cual cambia radicalmente la forma de jugar con ese personaje, teniendo asi un total de 34 personajes jugables.
+        </p>
+
+        <img src="tboi.2.png" title="Personajes de The Binding of Isaac" width="400" height="300" style="display: block; margin: auto;">
+    </section>
+
+    <br>
+
+    <h1 style="text-align: center; color: #fff;">Apariencia</h1>
+
+    <section id="Apariencia" style="max-width: 600px; margin: auto; background: #c00; padding: 20px; border-radius: 12px; color: #fff;">
+        <p>
+            Si bien cada personaje tiene su apariencia única, esta va cambiando a lo largo de la partida, ya que cada objeto que consigamos durante la partida no solo nos proporciona una mejora a nuestro personaje, sino que también modifica la apariencia, y mientras mas objetos tienes peor sera tu apariencia.
+        </p>
+
+        <img id="imagenApariencia" src="Transfomacion.1.jpg" title="Transformaciones de The Binding of Isaac" width="400" height="300" style="display: block; margin: auto;">
+
+        <br>
+
+        <button onclick="CambiarImagen()" style="display: block; margin: auto; background: #fff; border-radius: 16px; border: none;">Siguiente apariencia</button>
+
+    <script>
+
+        const Apariencias = ["Transfomacion.1.jpg", "Transfomacion.2.jpg", "Transfomacion.3.jpg", "Transfomacion.4.jpg", "Transfomacion.5.jpg", "Transfomacion.6.jpg", "Transfomacion.7.jpg",];
+
+        let Indice = 0;
+
+        function CambiarImagen() {
+            
+            Indice = (Indice + 1) % Apariencias.length;
+            document.getElementById("imagenApariencia").src = Apariencias[Indice];
+        }
+
+        </script>
+
+    </section>
+
+    <br>
+
+    <button
+        id="LO_MEJOR_DEL_FOKIN_JUEGO"
+        onclick="window.location.href='https://www.youtube.com/watch_popup?v=2NbBi5I7DB8'" style="display: block; margin: 40px auto; font-size: 3em; font-weight: bold; padding: 25px 60px; border-radius: 16px; border: none; letter-spacing: 2px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'">LO MEJOR DEL FOKIN JUEGO</button>
+</body>
+</html>
